@@ -13,6 +13,8 @@
 		in pojo class must have one ID type INT as primary Key
 	7.)new->hibernate XML MAPPING file -> Add Class [Select the class]
 	       a file is created then (<fileName>.hbm.xml)
+
+HibernateDemo
 ____________________________________________________________________________
 ##Employee.hbm.xml
 
@@ -44,3 +46,10 @@ ________________________________________________________________________________
         
     </session-factory>
 _________________________________________________________________________________
+
+______________________________________________________________________________>
+#HyberWeb Project
+
+---______----___-__--__-____-______-----______-_------_--------_____----__-_--_____
+
+1.)Create java folder if not there  
