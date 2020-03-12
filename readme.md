@@ -13,4 +13,34 @@
 		in pojo class must have one ID type INT as primary Key
 	7.)new->hibernate XML MAPPING file -> Add Class [Select the class]
 	       a file is created then (<fileName>.hbm.xml)
-	8.)
+____________________________________________________________________________
+##Employee.hbm.xml
+
+In FileName.hbm.xml having one tag name is generator 
+
+genrator tag class having 4 options [assigned/native/increment/?]
+
+
+_______________________________________________________________________________
+
+##Hibernate.cfg.xml
+
+ <session-factory>
+
+	1.) added <property name="hbm2ddl.auto">create</property>
+		create for creating the schema
+	             or
+		     <property name="hbm2ddl.auto">update</property>
+		     update for update the schema
+___________________________________________________________________________________		     
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.password">root</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3307/hibernatedb</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+       2.)  <mapping resource="user.hbm.xml"/>
+       changed
+        <mapping resource="Employee.hbm.xml"/>
+        
+    </session-factory>
+_________________________________________________________________________________
