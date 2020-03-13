@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 13, 2020 11:51:02 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.niit.recuiter.demo.EmployeeCollection" table="EMPLOYEECOLLECTION">
+        <id name="employeeId" type="int">
+            <column name="EMPLOYEEID" />
+            <generator class="increment" />
+        </id>
+        <property name="employeeName" type="java.lang.String">
+            <column name="EMPLOYEENAME" />
+        </property>
+        <set name="phoneNumbers" table="EMPLOYEEPHONE">
+            <key column name="EMPLOYEEID" ></key>
+  
+            <element type="java.lang.String">
+                <column name="PHONENUMBERS" />
+            </element>
+        </set>
+    </class>
+</hibernate-mapping>
