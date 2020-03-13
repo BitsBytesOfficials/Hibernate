@@ -15,12 +15,12 @@
 	       a file is created then (filename.hbm.xml)
 
 ## HibernateDemo
-> ### Employee.hbm.xml
+> ### ./src/main/java/Employee.hbm.xml
 
 In FileName.hbm.xml having one tag name is generator 
 
 genrator tag class having 4 options [ **assigned/native/increment/?** ]
-> ### Hibernate.cfg.xml
+> ### ./src/main/java/hibernate.cfg.xml
 
  <session-factory>
 
