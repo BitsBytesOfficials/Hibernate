@@ -1,6 +1,6 @@
-#steps
+# steps
 	1.)create Maven project
-	2.) Create Database config file(hibernate.cnf.xml)
+	2.) Create Database config file(hibernate.cfg.xml)
 		if any version not shown then go to 
 	
 			Help->Eclipse Market Place->Jboss->Install/change->
@@ -14,9 +14,9 @@
 	7.)new->hibernate XML MAPPING file -> Add Class [Select the class]
 	       a file is created then (<fileName>.hbm.xml)
 
-HibernateDemo
+ ## HibernateDemo
 ____________________________________________________________________________
-##Employee.hbm.xml
+### Employee.hbm.xml
 
 In FileName.hbm.xml having one tag name is generator 
 
@@ -25,7 +25,7 @@ genrator tag class having 4 options [assigned/native/increment/?]
 
 _______________________________________________________________________________
 
-##Hibernate.cfg.xml
+### Hibernate.cfg.xml
 
  <session-factory>
 
@@ -48,7 +48,7 @@ ________________________________________________________________________________
 _________________________________________________________________________________
 
 ______________________________________________________________________________>
-#HyberWeb Project
+## HyberWeb Project
 
 ---______----___-__--__-____-______-----______-_------_--------_____----__-_--_____
 
