@@ -11,7 +11,7 @@
 	 4. __setParameter()__ like the PreparedStatement
 	##### QuerySyantx 
 	1. String hql="FROM Employee"; //Select E.firstName from Employee (AS E) / E
-	__Query query=session.createQuery(hql);__
+		__Query query=session.createQuery(hql);__
 	List result=query.list();
     2.  With Where Clause
 		String hql="FROM Employee E where E.id>0"; //Select * from Employee E where E.id>0;
@@ -30,7 +30,7 @@
 			List result=query.list();
 
    ## HibernateDemo
-	1. EmployeeCollection added with the __java.util.Set__  for PhoneNumbers;
+	1. EmployeeCollection added with the **java.util.Set**  for PhoneNumbers;
 	2. EmployeeCollection.hb.xml started
 
 
