@@ -24,18 +24,19 @@ genrator tag class having 4 options [assigned/native/increment/?]
 
  <session-factory>
 
-	1.) __ added <property name="hbm2ddl.auto"> ** create ** </property> __
->		create for creating the schema
+	1.)added 
+	> <property name="hbm2ddl.auto"> *create* </property> 
+		create for creating the schema
 	             or
-__		     <property name="hbm2ddl.auto">** update **</property> __
->		     update for update the schema		     
+	  _ <property name="hbm2ddl.auto"> *update* </property> _
+	     update for update the schema		     
         <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
         <property name="hibernate.connection.password">root</property>
         <property name="hibernate.connection.url">jdbc:mysql://localhost:3307/hibernatedb</property>
         <property name="hibernate.connection.username">root</property>
         <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
        2.)  <mapping resource="user.hbm.xml"/>
-       changed
+           >changed
         <mapping resource="Employee.hbm.xml"/>
         
     </session-factory>

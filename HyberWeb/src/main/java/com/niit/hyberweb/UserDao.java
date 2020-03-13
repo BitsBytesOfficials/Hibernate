@@ -13,7 +13,7 @@ public class UserDao {
 		SessionFactory sf = cfg.buildSessionFactory();
 		Session session = sf.openSession();
 		Transaction t = session.beginTransaction();
-		t.begin();
+//		t.begin();
 		cnt = (Integer) session.save(u);
 		t.commit();
 		session.close();
