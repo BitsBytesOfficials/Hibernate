@@ -13,21 +13,21 @@
 	1. String hql="FROM Employee"; //Select E.firstName from Employee (AS E) / E
 	__Query query=session.createQuery(hql);__
 	List result=query.list();
-2.  With Where Clause
-	String hql="FROM Employee E where E.id>0"; //Select * from Employee E where E.id>0;
-	__Query query=session.createQuery(hql);__
-	List result=query.list();
+    2.  With Where Clause
+		String hql="FROM Employee E where E.id>0"; //Select * from Employee E where E.id>0;
+		__Query query=session.createQuery(hql);__
+		List result=query.list();
 	3. Order BY Clause
 		
-	String hql="FROM Employee order by E.ID desc"; select * from Employee AS E  order by E.ID desc;
-	__Query query=session.createQuery(hql);__
-	List result=query.list();
+		String hql="FROM Employee order by E.ID desc"; select * from Employee AS E  order by E.ID desc;
+		__Query query=session.createQuery(hql);__
+		List result=query.list();
 	4. Group By
-	String hql="FROM Employee order by E.ID desc groub by E.Name"; select * from Employee AS E  order by E.ID desc;
-	__Query query=session.createQuery(hql);__
-	List result=query.list();
-	__Query query=session.createQuery(hql);__
-	List result=query.list();
+			String hql="FROM Employee order by E.ID desc groub by E.Name"; select * from Employee AS E  order by E.ID desc;
+		__Query query=session.createQuery(hql);__
+			List result=query.list();
+		__Query query=session.createQuery(hql);__
+			List result=query.list();
 
    ## HibernateDemo
 	1. EmployeeCollection added with the __java.util.Set__  for PhoneNumbers;
