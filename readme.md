@@ -9,9 +9,10 @@
 	 2. __public List list()__ returns the result of the ralation as list.
 	 3. __public Query setFirstResult(int rowno)__ specified the row number from where record will be retrive
 	 4. __setParameter()__ like the PreparedStatement
-	##### QuerySyantx 
+	#### QuerySyantx 
 	1. String hql="FROM Employee"; //Select E.firstName from Employee (AS E) / E
-		__Query query=session.createQuery(hql);__
+
+	__Query query=session.createQuery(hql);__
 	List result=query.list();
     2.  With Where Clause
 		String hql="FROM Employee E where E.id>0"; //Select * from Employee E where E.id>0;
