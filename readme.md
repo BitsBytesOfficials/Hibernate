@@ -1,4 +1,4 @@
-# steps
+# Steps
 	1.)create Maven project
 	2.) Create Database config file(hibernate.cfg.xml)
 		if any version not shown then go to 
