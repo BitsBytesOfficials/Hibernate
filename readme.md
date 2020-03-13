@@ -15,26 +15,20 @@
 	       a file is created then (<fileName>.hbm.xml)
 
  ## HibernateDemo
-____________________________________________________________________________
 ### Employee.hbm.xml
 
 In FileName.hbm.xml having one tag name is generator 
 
 genrator tag class having 4 options [assigned/native/increment/?]
-
-
-_______________________________________________________________________________
-
 ### Hibernate.cfg.xml
 
  <session-factory>
 
-	1.) added <property name="hbm2ddl.auto">create</property>
-		create for creating the schema
+	1.) __ added <property name="hbm2ddl.auto"> ** create ** </property> __
+>		create for creating the schema
 	             or
-		     <property name="hbm2ddl.auto">update</property>
-		     update for update the schema
-___________________________________________________________________________________		     
+__		     <property name="hbm2ddl.auto">** update **</property> __
+>		     update for update the schema		     
         <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
         <property name="hibernate.connection.password">root</property>
         <property name="hibernate.connection.url">jdbc:mysql://localhost:3307/hibernatedb</property>
