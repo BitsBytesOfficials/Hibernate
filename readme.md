@@ -1,4 +1,4 @@
-# Steps
+> # Steps
 	1.)create Maven project
 	2.) Create Database config file(hibernate.cfg.xml)
 		if any version not shown then go to 
@@ -15,12 +15,12 @@
 	       a file is created then (filename.hbm.xml)
 
 ## HibernateDemo
-### Employee.hbm.xml
+> ### Employee.hbm.xml
 
 In FileName.hbm.xml having one tag name is generator 
 
 genrator tag class having 4 options [ **assigned/native/increment/?** ]
-### Hibernate.cfg.xml
+> ### Hibernate.cfg.xml
 
  <session-factory>
 
@@ -42,6 +42,6 @@ genrator tag class having 4 options [ **assigned/native/increment/?** ]
         > <mapping resource="Employee.hbm.xml"/>
         
     </session-factory>
-## HyberWeb Project
+### HyberWeb Project
 
 1. Create java folder if not there  
