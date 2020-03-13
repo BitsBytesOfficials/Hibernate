@@ -30,6 +30,29 @@ for(String name:list1){
 }
 out.println("<br/>");
 
+/****************************************************
+//Aggregate Function
+*****************************************************/
+query=sess.createQuery("select count(*) from User");
+List<Integer> list2=query.list();
+out.println("Total Names::"+"<br/>");
+out.println(list2.get(0)+"<br/>");
+out.println("<br/>");
+
+/***************************************************
+	Parameter Queries
+***************************************************/
+query=sess.createQuery("from User U where U.id=:id");
+query.setInteger("id",2);
+list=query.list();
+out.println("List of Employee with Criteria::"+"<br/>");
+for(User st:list){
+	out.println(st.getId()+" , " +st.getName()+" , "+st.getEmail()+" <br/>");
+}
+
+sess.getTransaction().commit();
+sess.close();
+factory.close();
 %>
 </body>
 </html>
