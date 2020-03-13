@@ -15,7 +15,7 @@
 	       a file is created then (filename.hbm.xml)
 
 ## HibernateDemo
-> ### Employee.hbm.xml( https://github.com/deepanshu102/Hibernate/src/main/java/Employee.hbm.xml)
+> ### Employee.hbm.xml( https://github.com/deepanshu102/Hibernate/blob/master/HibernateDemo/src/main/java/Employee.hbm.xml)
 
 In FileName.hbm.xml having one tag name is generator 
 
