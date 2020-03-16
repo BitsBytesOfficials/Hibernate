@@ -13,12 +13,9 @@
 <jsp:setProperty name="userBean" property="*" />
 
 <%
-try{
 int i=UserDao.register(userBean);
 if(i>0){
-	out.println("You are successfully registered");
-}}catch(Exception e){
-	out.println(e);
+ out.println("Sucessfully Register");
 }
 
 %>
