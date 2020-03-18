@@ -108,3 +108,5 @@ cr.__setMaxResults(<Integer Value>)__
         </set>
     </class>
 </hibernate-mapping>
+
+## lazy=true means employee200 is parent and emp_phone is the child one
