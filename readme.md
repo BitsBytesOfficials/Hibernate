@@ -82,3 +82,29 @@ cr.addOrder(__Order.desc("name")__)
 
 ##### Restrict the ResultSet
 cr.__setMaxResults(<Integer Value>)__
+
+
+
+# 18/02/2020 working in HyberWeb
+ > Hibernate Collections Mapping
+    + Employee.java (Collection File)
+	+ Employee.hbm.xml (Mapping file)
+	    <hibernate-mapping>
+   <class name="com.niit.hyberweb.Employee" table=" __EMPLOYEE200__ ">
+        <id name="employeeId" type="int">
+            <column name="EMPLOYEEID" />
+   <generator class=" **increment** "  />
+        </id>
+        <property name="employeeName" type="java.lang.String">
+            <column name="EMPLOYEENAME" />
+        </property>
+  <set name="phoneNumbers" table="**EMP_PHONE**" inverse="false" lazy="true">
+            <key>
+                <column name="EMPLOYEEID" />
+            </key>
+            <element type="java.lang.String">
+                <column name="PHONENUMBER" />
+            </element>
+        </set>
+    </class>
+</hibernate-mapping>
