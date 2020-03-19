@@ -128,3 +128,17 @@ cr.__setMaxResults(<Integer Value>)__
 
 			</property>
 		</component>
+
+# Inheritence Mapping Relationship [parent class object also created so we need to upcast that]
+> In HyberWeb having
+ 1. Person1.java (POJO [Parent of Employee1])
+ 2. Employee1.java( POJO [child of Person1])
+ 3. Mapping class (Person1.hbm.xml)
+    3.1. [<subclass name="Employee1" extends="Person1" discriminator-value="E">
+			<property name="departmentName" column="department_name" />
+<property name="joiningDate" type="date" column="joining_date" />
+</subclass> ] add before closing the class tag
+
+    3.2. <hibernate-mapping **package="com.niit.hyberweb"**>
+	3.3. <class name="Person1" table="Person_Inherit_Mapping" **discriminator-value="P"**>
+    3.4.  + <discriminator column="DISCRIMINATOR" type="string"/>
