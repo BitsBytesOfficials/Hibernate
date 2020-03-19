@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 19, 2020 9:49:51 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping package="com.niit.hyberweb">
+    <class name="Person1" table="Person_Inherit_Mapping" discriminator-value="P">
+        <id name="PersonId" type="java.lang.Long">
+            <column name="PERSONID" />
+            <generator class="increment" />
+        </id>
+        <discriminator column="DISCRIMINATOR" type="string"/>
+        <property name="firstname" type="java.lang.String">
+            <column name="FIRSTNAME" />
+        </property>
+        <property name="lastname" type="java.lang.String">
+            <column name="LASTNAME" />
+            
+        </property>
+        <subclass name="Employee1" extends="Person1" discriminator-value="E">
+<property name="departmentName" column="department_name" />
+<property name="joiningDate" type="date" column="joining_date" />
+</subclass>
+    </class>
+</hibernate-mapping>
