@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 18, 2020 2:40:52 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.niit.hyberweb.Address" table="ADDRESS">
+        <id name="city" type="java.lang.String">
+            <column name="CITY" />
+            <generator class="assigned" />
+        </id>
+        <property name="country" type="java.lang.String">
+            <column name="COUNTRY" />
+        </property>
+        <property name="pincode" type="int">
+            <column name="PINCODE" />
+        </property>
+    </class>
+</hibernate-mapping>

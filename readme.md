@@ -110,3 +110,21 @@ cr.__setMaxResults(<Integer Value>)__
 </hibernate-mapping>
 
 ## lazy=true means employee200 is parent and emp_phone is the child one
+
+
+# HAS-A Relationship between Address and Emp Class  in HyperWeb
+    ## STEPS
+1. create POJO  *ADDRESS* class 
+2. create POJO *EMP* class
+3. create EMP.hbm.xml mapping file of EMP.java
+4.  for Aggregation we change the EMP.hbm.xml
+
+		<component name="address" class="com.niit.hyberweb.Address">
+			<property name="city"></property>
+			<property name="country" type="java.lang.String">
+
+			</property>
+			<property name="pincode" type="int">
+
+			</property>
+		</component>
