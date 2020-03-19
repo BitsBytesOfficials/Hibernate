@@ -2,7 +2,7 @@ package com.niit.hyberweb;
 
 public class Person1 {
 
-	private Long PersonId;
+	private Long personId;
 	private String firstname;
 
 	public Person1() {
@@ -16,11 +16,11 @@ public class Person1 {
 	}
 
 	public Long getPersonId() {
-		return PersonId;
+		return personId;
 	}
 
 	public void setPersonId(Long personId) {
-		PersonId = personId;
+		personId = personId;
 	}
 
 	public String getFirstname() {
