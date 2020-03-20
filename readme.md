@@ -140,6 +140,7 @@ cr.__setMaxResults(<Integer Value>)__
     4. </subclass>  add before closing the class tag
 
     3.2. <hibernate-mapping **package="com.niit.hyberweb"**>
+	
 	3.3. <class name="Person1" table="Person_Inherit_Mapping" **discriminator-value="P"**>
-    3.4.  + <discriminator column="DISCRIMINATOR" type="string"/>
+    3.4. <discriminator column="DISCRIMINATOR" type="string"/>
 > One-To-Many Mapping using XML 
