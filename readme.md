@@ -143,5 +143,5 @@ cr.__setMaxResults(<Integer Value>)__
 	
 	3.3. <class name="Person1" table="Person_Inherit_Mapping" **discriminator-value="P"**>
 	
->    <discriminator column="DISCRIMINATOR" type="string"/>
+> <discriminator column="DISCRIMINATOR" type="string"/>
 > One-To-Many Mapping using XML 
