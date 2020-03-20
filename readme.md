@@ -134,11 +134,10 @@ cr.__setMaxResults(<Integer Value>)__
  1. Person1.java (POJO [Parent of Employee1])
  2. Employee1.java( POJO [child of Person1])
  3. Mapping class (Person1.hbm.xml)
-    3.1. 
-	<subclass name="Employee1" extends="Person1" discriminator-value="E">
-			<property name="departmentName" column="department_name" />
-<property name="joiningDate" type="date" column="joining_date" />
-</subclass>  add before closing the class tag
+    1. <subclass name="Employee1" extends="Person1" discriminator-value="E">
+	2.		<property name="departmentName" column="department_name" />
+3. <property name="joiningDate" type="date" column="joining_date" />
+4. </subclass>  add before closing the class tag
 
     3.2. <hibernate-mapping **package="com.niit.hyberweb"**>
 	3.3. <class name="Person1" table="Person_Inherit_Mapping" **discriminator-value="P"**>
